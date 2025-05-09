@@ -48,13 +48,13 @@ CREATE TABLE products (
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sriramaleti9238/ecommerce.git
-   cd ecommerce
+   git clone https://github.com/sriramaleti9238/e-commerce.git
+   cd e-commerce
    ```
 
 2. Configure the database connection in `src/main/resources/application-dev.properties` for development:
    ```properties
-   spring.datasource.url=jdbc:postgresql://localhost:5432/ecommerce
+   spring.datasource.url=jdbc:postgresql://localhost:5432/ecommerce_db
    spring.datasource.username=your_username
    spring.datasource.password=your_password
    ```
@@ -75,7 +75,7 @@ CREATE TABLE products (
 
 3. Configure the database connection in `src/main/resources/application-prod.properties` for production:
    ```properties
-   spring.datasource.url=jdbc:postgresql://your-prod-host:5432/ecommerce
+   spring.datasource.url=jdbc:postgresql://your-prod-host:5432/ecommerce_db
    spring.datasource.username=your_prod_username
    spring.datasource.password=your_prod_password
    ```

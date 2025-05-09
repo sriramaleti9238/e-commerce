@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<footer th:fragment="footer" class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <h5><i class="bi bi-shop"></i> E-Commerce Showcase</h5>
+                <p class="text-muted">A Spring Boot demonstration e-commerce application.</p>
+            </div>
+            <div class="col-md-3 mb-3 mb-md-0">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a th:href="@{/}" class="text-decoration-none text-light">Home</a></li>
+                    <li><a th:href="@{/products}" class="text-decoration-none text-light">Products</a></li>
+                    <li><a th:href="@{/about}" class="text-decoration-none text-light">About</a></li>
+                    <li><a th:href="@{/contact}" class="text-decoration-none text-light">Contact</a></li>
+                    <li><a th:href="@{/admin/login}" class="text-decoration-none text-light">Admin Login</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Contact</h5>
+                <ul class="list-unstyled">
+                    <li><a href="mailto:sriram.aleti2000@gmail.com" class="text-decoration-none text-light">
+                        <i class="bi bi-envelope"></i>sriram.aleti2000@gmail.com
+                    </a></li>
+                    <li><a href="https://github.com/sriramaleti9238" target="github" class="text-decoration-none text-light">
+                        <i class="bi bi-github"></i> GitHub
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/in/sriramaleti" target="linkedin" class="text-decoration-none text-light">
+                        <i class="bi bi-linkedin"></i> LinkedIn
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="mt-4 mb-3">
+        <div class="text-center">
+            <p class="mb-0">
+                &copy; <span th:text="${#dates.format(#dates.createNow(), 'yyyy')}">2025</span> E-Commerce Showcase. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
